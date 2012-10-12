@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Title:</b>
-  <%= @post.title %>
+  <b><%= @post.title %></b>
   <br />
-  Posted <%= @post.created_at %> by <%= @post.name %>
+  Posted <%= @post.created_at.localtime.strftime("%B, %d %Y @ %I:%M %p")  %> by <%= @post.name %>
 </p>
 
 <p>
