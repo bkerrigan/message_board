@@ -1,0 +1,15 @@
+<table id="header">
+  <tr>
+    <td>
+      <h1>Message Board</h1>
+    </td>
+  </tr>
+  <tr id="header_bar">
+    <td>
+      <%= button_to 'Post', new_post_path, :method => :get, :class => "new-post-button" %>
+    </td>
+    <td>
+      <%= button_to 'List', posts_path, :method => :get %>
+    </td>
+  </tr>
+</table>
